@@ -37,46 +37,24 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  border: 3px solid #4d5ae5;
+  /*border: 3px solid #4d5ae5;*/
 }
 
-/*.header-container {
+/*======================HEADER==================*/
+
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.header-container {
   display: flex;
+  /*padding-top: 24px;
+  padding-bottom: 24px;*/
 }
 
 .navigation {
   display: flex;
   align-items: center;
-}
-
-.header-menu {
-  display: flex;
-  gap: 40px;
-}
-
-.header-contacts {
-}
-
-.header-contacts-list {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-  padding: 24px 0;
-}
-.header {
-  border-bottom: 1px solid #e7e9fc;
-}
-
-.header-menu-item {
-  padding: 24px 0;
-  display: block;
-}                                          by syvonenko*/
-
-/*======================HEADER==================*/
-
-.header-container {
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 .header-logo {
@@ -100,9 +78,13 @@ img {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.32px;
+  display: flex;
+  gap: 40px;
 }
 
 .header-menu-item {
+  padding: 24px 0;
+  display: block;
 }
 
 .header-menu-link:hover,
@@ -119,7 +101,10 @@ img {
 }
 
 .header-contacts-list {
+  display: flex;
+  align-items: center;
   gap: 40px;
+  padding: 24px 0;
 }
 
 .header-contacts-item {
@@ -139,7 +124,7 @@ img {
   padding-top: 188px;
   padding-right: 472px;
   padding-bottom: 188px;
-  padding-left: 472px;
+  padding-left: 331px;
 }
 
 .hero-title {
@@ -148,7 +133,8 @@ img {
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 1.12px;
-  max-width: 496px;
+  width: 496px;
+  margin: 0 auto;
   margin-bottom: 48px;
 }
 
@@ -161,6 +147,9 @@ img {
   line-height: 1.5;
   letter-spacing: 0.64px;
   cursor: pointer;
+  padding: 16px 32px;
+  border: none;
+  border-radius: 4px;
 }
 
 .hero-btn:hover,
@@ -188,6 +177,8 @@ img {
 }
 
 .features-list {
+  display: flex;
+  gap: 25px;
 }
 
 .features-list-item {
@@ -206,6 +197,7 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.32px;
+  width: 264px;
 }
 
 /*=====================================================================*/
@@ -225,16 +217,20 @@ img {
   line-height: 1.11;
   letter-spacing: 0.72px;
   text-transform: capitalize;
-  max-width: 162px;
+  width: 162px;
   margin: 0 auto;
   margin-bottom: 72px;
 }
 
 .team-list {
+  display: flex;
+  gap: 24px;
 }
 
 .team-list-item {
-  background: #fff;
+  background-color: #fff;
+  width: 264px;
+  padding-bottom: 32px;
 }
 
 .team-list-subtitle {
@@ -244,6 +240,8 @@ img {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.4px;
+  margin-top: 32px;
+  margin-bottom: 8px;
 }
 
 .team-list-text {
@@ -251,6 +249,7 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.32px;
+  /*margin-bottom: 32px;*/
 }
 
 /*=================================================================================*/
@@ -275,9 +274,16 @@ img {
 }
 
 .portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
 }
 
 .portfolio-list-item {
+  border: 1px solid #e7e9fc;
+  background-color: #fff;
+  width: 360px;
+  padding-bottom: 32px;
 }
 
 .portfolio-subtitle {
@@ -286,14 +292,22 @@ img {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.4px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-top: 32px;
+  margin-bottom: 8px;
 }
 
 .portfolio-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.32px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
+.portfolio-card-text {
+}
 /*================================================================================*/
 
 /*================================footer========================================*/
