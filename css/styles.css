@@ -37,7 +37,6 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  /*border: 3px solid #4d5ae5;*/
 }
 
 /*======================HEADER==================*/
@@ -48,8 +47,6 @@ img {
 
 .header-container {
   display: flex;
-  /*padding-top: 24px;
-  padding-bottom: 24px;*/
 }
 
 .navigation {
@@ -121,10 +118,7 @@ img {
 
 .hero-container {
   background: var(--NAVY-BLUE, #2e2f42);
-  padding-top: 188px;
-  padding-right: 472px;
-  padding-bottom: 188px;
-  padding-left: 331px;
+  padding: 188px 0;
 }
 
 .hero-title {
@@ -133,7 +127,7 @@ img {
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 1.12px;
-  width: 496px;
+  max-width: 496px;
   margin: 0 auto;
   margin-bottom: 48px;
 }
@@ -147,6 +141,9 @@ img {
   line-height: 1.5;
   letter-spacing: 0.64px;
   cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  min-width: 169px;
   padding: 16px 32px;
   border: none;
   border-radius: 4px;
@@ -161,14 +158,18 @@ img {
 
 /*==============================features===============================*/
 
-.features-container {
+.features {
   padding-top: 120px;
   padding-bottom: 120px;
 }
 
 .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
   margin: -1px;
   border: 0;
+  padding: 0;
 
   white-space: nowrap;
   clip-path: inset(100%);
@@ -178,7 +179,7 @@ img {
 
 .features-list {
   display: flex;
-  gap: 25px;
+  gap: 24px;
 }
 
 .features-list-item {
@@ -204,10 +205,13 @@ img {
 
 /*===========================team=======================================*/
 
-.team-container {
+.team {
   background: var(--CLOUD, #f4f4fd);
   padding-top: 120px;
   padding-bottom: 120px;
+}
+
+.team-container {
 }
 
 .team-title {
@@ -217,7 +221,7 @@ img {
   line-height: 1.11;
   letter-spacing: 0.72px;
   text-transform: capitalize;
-  width: 162px;
+  min-width: 162px;
   margin: 0 auto;
   margin-bottom: 72px;
 }
@@ -231,6 +235,11 @@ img {
   background-color: #fff;
   width: 264px;
   padding-bottom: 32px;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-item-style {
+  padding: 32px 0;
 }
 
 .team-list-subtitle {
@@ -240,7 +249,6 @@ img {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.4px;
-  margin-top: 32px;
   margin-bottom: 8px;
 }
 
@@ -256,7 +264,7 @@ img {
 
 /*==============================portfolio================================*/
 
-.portfolio-container {
+.portfolio {
   padding-top: 120px;
   padding-bottom: 120px;
 }
@@ -268,7 +276,7 @@ img {
   line-height: 1.11;
   letter-spacing: 0.72px;
   text-transform: capitalize;
-  max-width: 218px;
+  min-width: 218px;
   margin: 0 auto;
   margin-bottom: 72px;
 }
@@ -280,10 +288,8 @@ img {
 }
 
 .portfolio-list-item {
-  border: 1px solid #e7e9fc;
   background-color: #fff;
   width: 360px;
-  padding-bottom: 32px;
 }
 
 .portfolio-subtitle {
@@ -292,9 +298,6 @@ img {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.4px;
-  padding-left: 16px;
-  padding-right: 16px;
-  margin-top: 32px;
   margin-bottom: 8px;
 }
 
@@ -302,20 +305,19 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.32px;
-  padding-left: 16px;
-  padding-right: 16px;
 }
 
 .portfolio-card-text {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
 }
 /*================================================================================*/
 
 /*================================footer========================================*/
 
-.footer-container {
-  background: var(--NAVY-BLUE, #2e2f42);
-  padding-top: 101.5px;
-  padding-bottom: 100px;
+.footer {
+  background-color: var(--NAVY-BLUE, #2e2f42);
+  padding: 100px 0;
 }
 
 .footer-logo {
@@ -327,7 +329,8 @@ img {
   line-height: 1.17;
   letter-spacing: 0.54px;
   text-transform: uppercase;
-  margin-bottom: 17.5px;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .footer-span {
